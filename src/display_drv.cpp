@@ -34,8 +34,8 @@ void display_drv::update()
         oled_drv.drawStr(45, 22, "C");
         oled_drv.setCursor(5, 22);
         oled_drv.print(temperature, 1);
-        oled_drv.drawStr(45, 32, "%");
-        oled_drv.setCursor(5, 32);
+        oled_drv.drawStr(45, 36, "%");
+        oled_drv.setCursor(5, 36);
         oled_drv.print(humidity, 1);
     } while (oled_drv.nextPage());
 }

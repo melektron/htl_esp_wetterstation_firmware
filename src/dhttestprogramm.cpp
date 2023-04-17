@@ -6,13 +6,12 @@ www.elektron.work
 
 Wetterstation main programm
 */
+
 #include <Arduino.h>
 #include <DHTesp.h>
 #include "config.hpp"
 #include "leds.hpp"
 #include "display_drv.hpp"
-
-
 
 // Display instanz
 display_drv display;
@@ -33,7 +32,6 @@ void setup()
 
 void loop()
 {
-
     // read temperature and humidity
     float temp_c = sensor.getTemperature();
     float humid = sensor.getHumidity();
