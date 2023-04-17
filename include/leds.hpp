@@ -23,4 +23,14 @@ namespace leds
      * @param _temp 
      */
     void set_temperature(double _temp);
+
+    /**
+     * @brief returns the state of all LEDs:
+     * 
+     * @return uint8_t 
+     * Bit 1 = LED R;
+     * Bit 2 = LED Y;
+     * Bit 3 = LED G;
+     */
+    uint8_t get_packed_state();
 };
