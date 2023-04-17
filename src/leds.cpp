@@ -29,19 +29,19 @@ void leds::set_temperature(double _temp)
     {
         digitalWrite(CONFIG_IO_LED_R, rs = 0);
         digitalWrite(CONFIG_IO_LED_Y, ys = 0);
-        digitalWrite(CONFIG_IO_LED_G, rs = 1);
+        digitalWrite(CONFIG_IO_LED_G, gs = 1);
     }
     else if (_temp < 23.5)
     {
         digitalWrite(CONFIG_IO_LED_R, rs = 0);
         digitalWrite(CONFIG_IO_LED_Y, ys = 1);
-        digitalWrite(CONFIG_IO_LED_G, rs = 1);
+        digitalWrite(CONFIG_IO_LED_G, gs = 1);
     }
     else
     {
         digitalWrite(CONFIG_IO_LED_R, rs = 1);
         digitalWrite(CONFIG_IO_LED_Y, ys = 1);
-        digitalWrite(CONFIG_IO_LED_G, rs = 1);
+        digitalWrite(CONFIG_IO_LED_G, gs = 1);
     }
 }
 
