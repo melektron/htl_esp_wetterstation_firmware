@@ -37,6 +37,10 @@ void display_drv::update()
         oled_drv.drawStr(45, 36, "%");
         oled_drv.setCursor(5, 36);
         oled_drv.print(humidity, 1);
+        int w = oled_drv.getDisplayWidth();
+        int h = oled_drv.getDisplayHeight();
+        int abst = 2;
+        oled_drv.drawRFrame(abst, 10, w - 2 * abst, h - 20, 5);
     } while (oled_drv.nextPage());
 }
 
